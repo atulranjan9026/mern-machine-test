@@ -9,8 +9,8 @@ const listRoutes = require('./routes/list');
 const app = express();
 
 app.use(cors({
-  origin: 'https://mern-machine-test-ueit.onrender.com/',
-  methods: ['POST', 'GET', 'OPTIONS'],
+  origin: '*',
+  methods: ['POST', 'GET', 'OPTIONS', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(express.json());

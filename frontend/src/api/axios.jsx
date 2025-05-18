@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://mern-machine-test-ueit.onrender.com/',
+  baseURL: 'https://mern-machine-test-ueit.onrender.com/api',
 });
 
 // Add a request interceptor to include the token
