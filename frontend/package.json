@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && craco start",
-    "build": "BABEL_DISABLE_CACHE=1 babel src --out-dir dist --quiet",
+    "build": "cross-env BABEL_DISABLE_CACHE=1 babel src --out-dir dist --quiet",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
@@ -36,6 +36,9 @@
     "yup": "^1.6.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/preset-typescript": "^7.27.1",
+    "cross-env": "^7.0.3",
     "eslint": "^7.14.0",
     "eslint-plugin-react": "^7.27.0"
   },
