@@ -17,9 +17,7 @@ const Dashboard = () => {
     totalDistributions: 0,
     recentContacts: 0
   });
-  console.log("stats:", stats);
-  console.log("agents:", agents);
-  console.log("distributions:", distributions);
+ 
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);

@@ -9,7 +9,7 @@ const listRoutes = require('./routes/list');
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://mern-machine-test-ueit.onrender.com/',
   methods: ['POST', 'GET', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
